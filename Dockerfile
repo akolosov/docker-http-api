@@ -9,4 +9,4 @@ ADD index.html /app/index.html
 ADD run.sh /run.sh
 RUN chmod +x /*.sh
 
-CMD ["/run.sh"]
+ENTRYPOINT ["/bin/bash", "/run.sh"]

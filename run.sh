@@ -3,4 +3,4 @@
 set -e
 
 echo "=> Starting and running Nginx..."
-/usr/sbin/nginx
+/usr/sbin/nginx @$
