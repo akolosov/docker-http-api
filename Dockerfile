@@ -6,7 +6,6 @@ RUN mkdir -p /app
 ADD default /etc/nginx/sites-enabled/default
 ADD index.html /app/index.html
 
-ADD run.sh /run.sh
-RUN chmod +x /*.sh
+ENV SHELL /bin/bash
 
-ENTRYPOINT ["/bin/bash", "/run.sh"]
+ENTRYPOINT ["/usr/sbin/nginx"]
