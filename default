@@ -18,7 +18,6 @@ server {
 
   location /route/ {
     proxy_pass http://osrm/;
-    health_check;
     proxy_set_header Host $http_host;
   }
 }
