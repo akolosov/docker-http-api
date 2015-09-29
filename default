@@ -1,4 +1,5 @@
 upstream osrm {
+  server 192.168.200.3.5000;
   server 192.168.200.4:5000;
 }
 
