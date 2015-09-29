@@ -6,6 +6,11 @@ RUN mkdir -p /app
 ADD default /etc/nginx/sites-enabled/default
 ADD index.html /app/index.html
 
+# Define mount points.
+VOLUME ["/data"]
+
+RUN mkdir -p /data/log
+
 ENV SHELL /bin/bash
 
 ENTRYPOINT ["/usr/sbin/nginx"]
