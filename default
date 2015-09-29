@@ -1,5 +1,5 @@
 upstream osrm {
-  server 192.168.200.4:5000 fail_timeout=1s slow_start=60s;
+  server 192.168.200.4:5000 fail_timeout=1s;
   server 192.168.200.3.5000 backup;
 }
 
@@ -10,7 +10,7 @@ server {
   root /app;
   index index.html;
   
-	access_log /data/log/access.log;
+  access_log /data/log/access.log;
   error_log /data/log/error.log;
 
   server_name localhost;
