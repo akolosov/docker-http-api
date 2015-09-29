@@ -9,6 +9,9 @@ server {
 
   root /app;
   index index.html;
+  
+	access_log /data/log/access.log;
+  error_log /data/log/error.log;
 
   server_name localhost;
 
